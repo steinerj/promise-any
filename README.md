@@ -4,6 +4,11 @@
 
 ES6 promises don't provide any(). A small library to implement them.
 
+What does it do?
+
+The any function accepts an array of promises and returns a promise that is fulfilled by the first given promise to be fulfilled, or rejected if all of the given promises are rejected.
+(from Kris Kowal's Q documentation)
+ 
 ```javascript
 var promiseAny = require('promise-any');
 var promises = [Promise.resolve('p1'), Promise.reject('p2')];
